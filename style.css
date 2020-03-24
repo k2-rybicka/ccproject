@@ -16,7 +16,7 @@ nav {
 	display: inline-block;
 }
 
-.active {
+#active {
 	display: inline-block;
 	font-weight: bold;
 }
