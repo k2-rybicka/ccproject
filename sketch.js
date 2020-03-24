@@ -92,8 +92,15 @@ function keyPressed() {
 		noStroke();
 		fill(255,215,82);
 		triangle(0,0,100,0,0,100);
-		fill(255,255,255,30);
-		cloud(random(0,800),random(0,600),random(10,60));
+		fill(255,255,255,40);
+		cloud(random(0,800),random(0,600),random(40,100));
+		cloud(random(0,800),random(0,600),random(40,100));
+		cloud(random(0,800),random(0,600),random(40,100));
+		cloud(random(0,800),random(0,600),random(40,100));
+		cloud(random(0,800),random(0,600),random(40,100));
+		cloud(random(0,800),random(0,600),random(40,100));
+		cloud(random(0,800),random(0,600),random(40,100));
+		cloud(random(0,800),random(0,600),random(40,100));
 	}
 }
 
@@ -194,8 +201,7 @@ function star(x,y,z) {
 
 function cloud(x,y,z) {
 	noStroke();
-	//fill(255,20);
 	circle(x,y,z);
-	circle(x-x/2,y,z-z/2);
-	circle(x+x/2,y,z-z/4);
+	circle(x-z/2,y,z-z/2);
+	circle(x+z/2,y,z-z/4);
 }
