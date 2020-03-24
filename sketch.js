@@ -70,9 +70,15 @@ function keyTyped() {
 function keyPressed() {
 	if (keyCode === RIGHT_ARROW) {
 		background(51,19,179);
-		stroke(255,248,186);
-		line(width/2,height/2-10,width/2,height/2+10);
-		line(width/2-10,height/2,width/2+10,height/2);
+		star(random(0,800),random(0,600),random(4,16));
+		star(random(0,800),random(0,600),random(4,16));
+		star(random(0,800),random(0,600),random(4,16));
+		star(random(0,800),random(0,600),random(4,16));
+		star(random(0,800),random(0,600),random(4,16));
+		star(random(0,800),random(0,600),random(4,16));
+		star(random(0,800),random(0,600),random(4,16));
+		star(random(0,800),random(0,600),random(4,16));
+		star(random(0,800),random(0,600),random(4,16));
 	} else if (keyCode === LEFT_ARROW) {
 		background(135,235,255);
 	}
@@ -164,4 +170,11 @@ function zero(x,y,z) {
 	quad(x,y+4*z,x+4*z,y+4*z,x+4*z,y+5*z,x,y+5*z);
 	quad(x,y+z,x+z,y+z,x+z,y+4*z,x,y+4*z);
 	quad(x+3*z,y+z,x+4*z,y+z,x+4*z,y+4*z,x+3*z,y+4*z);
+}
+
+function star(x,y,z) {
+	stroke(255,248,186);
+	strokeWeight(2);
+	line(x,y,x+2*z,y);
+	line(x+z,y-z,x+z,y+z);
 }
