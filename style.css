@@ -33,6 +33,8 @@ nav {
 	padding: 0 3px;
 }
 
-a {
+li a {
+	display: block;
+	width: 60px;
 	color: #3C424D;
 }
