@@ -42,3 +42,22 @@ li a {
 li a:hover {
 	background-color: #111;
 }
+
+p {
+	font-family: Tahoma, Geneva, sans-serif;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
+.description {
+	display: block;
+	width:900px;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: #677285;
+}
+
+#website {
+	color: #E0CAFF;
+	text-decoration: none;
+}
