@@ -91,7 +91,8 @@ function keyPressed() {
 		backgroundColor(135,235,255);
 		noStroke();
 		fill(255,215,82);
-		triangle(0,0,50,0,0,50);
+		triangle(0,0,100,0,0,100);
+		cloud(random(0,800),random(0,600),random(10,60));
 	}
 }
 
@@ -188,4 +189,12 @@ function star(x,y,z) {
 	strokeWeight(2);
 	line(x,y,x+2*z,y);
 	line(x+z,y-z,x+z,y+z);
+}
+
+function cloud(x,y,z) {
+	noStroke();
+	fill(255,20);
+	circle(x,y,z);
+	circle(x-x/2,y,z-z/2);
+	circle(x+x/2,y,z-z/4);
 }
