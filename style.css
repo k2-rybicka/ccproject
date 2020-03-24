@@ -9,11 +9,16 @@ nav {
 
 .gen ol {
 	list-style-type: none;
-	padding-left: 40%;
+	padding-left: 0 auto;
 }
 
 .geni {
 	display: inline-block;
+}
+
+.active {
+	display: inline-block;
+	font-weight: bold;
 }
 
 .geni a::after {
