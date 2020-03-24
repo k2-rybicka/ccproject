@@ -1,6 +1,6 @@
 body {
 	text-align: center;
-	background-color: #C7CCFF;
+	background-color: #8B99B3;
 }
 
 nav {
@@ -14,6 +14,8 @@ nav {
 
 .geni {
 	display: inline-block;
+	color: #3C424D;
+	font-size: 40;
 }
 
 #active {
