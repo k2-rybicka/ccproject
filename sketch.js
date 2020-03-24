@@ -69,7 +69,7 @@ function keyTyped() {
 
 function keyPressed() {
 	if (keyCode === RIGHT_ARROW) {
-		background(51,19,179);
+		backgroundColor(51,19,179);
 		star(random(0,800),random(0,600),random(4,16));
 		star(random(0,800),random(0,600),random(4,16));
 		star(random(0,800),random(0,600),random(4,16));
@@ -88,7 +88,7 @@ function keyPressed() {
 		star(random(0,800),random(0,600),random(4,16));
 		star(random(0,800),random(0,600),random(4,16));
 	} else if (keyCode === LEFT_ARROW) {
-		background(135,235,255);
+		backgroundColor(135,235,255);
 		noStroke();
 		fill(255,215,82);
 		triangle(0,0,50,0,0,50);
