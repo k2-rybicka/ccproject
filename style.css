@@ -1,11 +1,11 @@
 body {
 	text-align: center;
 	background-color: #8B99B3;
-	padding-top: 4px;
 }
 
 nav {
 	border-bottom: 2px solid black;
+	padding-bottom: 4px;
 }
 
 .gen ol {
