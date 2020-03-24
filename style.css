@@ -2,3 +2,25 @@ body {
 	text-align: center;
 	background-color: #C7CCFF;
 }
+
+nav {
+	border-bottom: 2px solid black;
+}
+
+.gen ol {
+	list-style-type: none;
+	padding-left: 40%;
+}
+
+.geni {
+	display: inline-block;
+}
+
+.geni a::after {
+	display: inline-block;
+	color:#000;
+	content: '/';
+	font-size: 80%;
+	font-weight: bold;
+	padding: 0 3px;
+}
