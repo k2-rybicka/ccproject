@@ -21,13 +21,18 @@ nav {
 #active {
 	display: inline-block;
 	font-weight: bold;
+	color: #D9D9D9;
 }
 
 .geni a::after {
 	display: inline-block;
-	color:#000;
+	color: #3C424D;
 	content: '/';
 	font-size: 80%;
 	font-weight: bold;
 	padding: 0 3px;
+}
+
+a {
+	color: #3C424D;
 }
