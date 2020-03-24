@@ -91,7 +91,8 @@ function keyPressed() {
 		background(135,235,255);
 		noStroke();
 		fill(255,215,82);
-		triangle(0,0,100,0,0,100);
+		//triangle(0,0,100,0,0,100);
+		circle(0,0,150);
 		fill(255,255,255,40);
 		cloud(random(0,800),random(0,600),random(40,200));
 		cloud(random(0,800),random(0,600),random(40,200));
