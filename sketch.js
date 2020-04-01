@@ -79,8 +79,13 @@ function keyTyped() {
 
 function keyPressed() {
 	if (keyCode === RIGHT_ARROW) {
-		day.stop();
-		night.play();
+		if (day.isPlaying()) {
+    day.stop();
+    night.play();
+  } else if (night.isPlaying()) {
+    night.stop();
+    night.play();
+  }
 		background(51,19,179);
 		for(let y = 0; y < itter; y++) {
       let randomSize = random(minSize, maxSize);
