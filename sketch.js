@@ -79,13 +79,11 @@ function keyTyped() {
 
 function keyPressed() {
 	if (keyCode === RIGHT_ARROW) {
-		night.play();
 		if (day.isPlaying()) {
     day.stop();
     night.play();
-  } else if (night.isPlaying()) {
-    night.stop();
-    night.play();
+  } else {
+  	night.play();
   }
 		background(51,19,179);
 		for(let y = 0; y < itter; y++) {
@@ -98,12 +96,10 @@ function keyPressed() {
       ellipse(randomX, randomY, randomSize, randomSize);
   }
 	} else if (keyCode === LEFT_ARROW) {
-		day.play();
 		if (night.isPlaying()) {
     night.stop();
     day.play();
-  } else if (day.isPlaying()) {
-    day.stop();
+  } else {
     day.play();
   }
 		background(135,235,255);
