@@ -10,8 +10,8 @@ let whistle;
 let whoosh;
 
 let itter = 240;
-let minSize = 0.5;
-let maxSize = 2;
+let minSize = 1;
+let maxSize = 4;
 let minOpacity = 50;
 let maxOpacity = 200;
 
