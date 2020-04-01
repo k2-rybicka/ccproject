@@ -1,13 +1,13 @@
 let flute;
 let harp;
-let kick;
+let lvl;
 let laser;
-let metal;
+let cat;
 let paper;
 let reverb;
-let spring;
+let plum;
 let whistle;
-let whoosh;
+let bark;
 let day;
 let night;
 
@@ -20,14 +20,14 @@ let maxOpacity = 200;
 function preload() {
 	flute = loadSound("flute.wav");
 	harp = loadSound("harp.wav");
-	kick = loadSound("kick.wav");
+	lvl = loadSound("lvl.wav");
 	laser = loadSound("laser.wav");
-	metal = loadSound("metal.wav");
+	cat = loadSound("cat.wav");
 	paper = loadSound("paper.wav");
 	reverb = loadSound("reverb.wav");
-	spring = loadSound("spring.wav");
+	plum = loadSound("plum.wav");
 	whistle = loadSound("whistle.wav");
-	whoosh = loadSound("whoosh.wav");
+	bark = loadSound("bark.wav");
 	day = loadSound("day.wav");
 	night = loadSound("night.wav");
 }
@@ -52,13 +52,13 @@ function keyTyped() {
 		harp.play();
 	} else if (key === '3') {
 		three(random(0,width),random(0,height),random(5,30));
-		kick.play();
+		lvl.play();
 	} else if (key === '4') {
 		four(random(0,width),random(0,height),random(5,30));
 		laser.play();
 	} else if (key === '5') {
 		five(random(0,width),random(0,height),random(5,30));
-		metal.play();
+		cat.play();
 	} else if (key === '6') {
 		six(random(0,width),random(0,height),random(5,30));
 		paper.play();
@@ -67,13 +67,13 @@ function keyTyped() {
 		reverb.play();
 	} else if (key === '8') {
 		eight(random(0,width),random(0,height),random(5,30))
-		spring.play();
+		plum.play();
 	} else if (key === '9') {
 		nine(random(0,width),random(0,height),random(5,30))
 		whistle.play();
 	} else if (key === '0') {
 		zero(random(0,width),random(0,height),random(5,30))
-		whoosh.play();
+		bark.play();
 	}
 }
 
