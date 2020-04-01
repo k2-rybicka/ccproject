@@ -79,6 +79,7 @@ function keyTyped() {
 
 function keyPressed() {
 	if (keyCode === RIGHT_ARROW) {
+		night.play();
 		if (day.isPlaying()) {
     day.stop();
     night.play();
@@ -97,6 +98,7 @@ function keyPressed() {
       ellipse(randomX, randomY, randomSize, randomSize);
   }
 	} else if (keyCode === LEFT_ARROW) {
+		day.play();
 		if (night.isPlaying()) {
     night.stop();
     day.play();
