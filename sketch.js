@@ -29,7 +29,7 @@ function preload() {
 }
 
 function setup() {
-  createCanvas(800,600);
+  createCanvas(windowWidth,windowHeight);
   background(139,153,179);
 }
 
@@ -41,34 +41,34 @@ function draw() {
 
 function keyTyped() {
 	if (key === '1') {
-		one(random(0,800),random(0,600),random(5,30));
+		one(random(0,windowWidth),random(0,windowHeight),random(5,30));
 		flute.play();
 	} else if (key === '2') {
-		two(random(0,800),random(0,600),random(5,30));
+		two(random(0,windowWidth),random(0,windowHeight),random(5,30));
 		harp.play();
 	} else if (key === '3') {
-		three(random(0,800),random(0,600),random(5,30));
+		three(random(0,windowWidth),random(0,windowHeight),random(5,30));
 		kick.play();
 	} else if (key === '4') {
-		four(random(0,800),random(0,600),random(5,30));
+		four(random(0,windowWidth),random(0,windowHeight),random(5,30));
 		laser.play();
 	} else if (key === '5') {
-		five(random(0,800),random(0,600),random(5,30));
+		five(random(0,windowWidth),random(0,windowHeight),random(5,30));
 		metal.play();
 	} else if (key === '6') {
-		six(random(0,800),random(0,600),random(5,30));
+		six(random(0,windowWidth),random(0,windowHeight),random(5,30));
 		paper.play();
 	} else if (key === '7') {
-		seven(random(0,800),random(0,600),random(5,30))
+		seven(random(0,windowWidth),random(0,windowHeight),random(5,30))
 		reverb.play();
 	} else if (key === '8') {
-		eight(random(0,800),random(0,600),random(5,30))
+		eight(random(0,windowWidth),random(0,windowHeight),random(5,30))
 		spring.play();
 	} else if (key === '9') {
-		nine(random(0,800),random(0,600),random(5,30))
+		nine(random(0,windowWidth),random(0,windowHeight),random(5,30))
 		whistle.play();
 	} else if (key === '0') {
-		zero(random(0,800),random(0,600),random(5,30))
+		zero(random(0,windowWidth),random(0,windowHeight),random(5,30))
 		whoosh.play();
 	}
 }
@@ -95,7 +95,7 @@ function keyPressed() {
 			cloud(randomX, randomY, random(20,100));
 		}
 		fill(255,215,82);
-		circle(0,0,250);
+		circle(0,0,350);
 	}
 }
 
