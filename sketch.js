@@ -88,15 +88,14 @@ function keyPressed() {
 	} else if (keyCode === LEFT_ARROW) {
 		background(135,235,255);
 		noStroke();
-		fill(255,215,82);
-		//triangle(0,0,100,0,0,100);
-		circle(0,0,150);
 		fill(255,255,255);
 		for (let y = 0; y < 8; y++) {
 			let randomX = random(width);
 			let randomY = random(height);
-			cloud(randomX, randomY, random(60,200));
+			cloud(randomX, randomY, random(20,100));
 		}
+		fill(255,215,82);
+		circle(0,0,250);
 	}
 }
 
