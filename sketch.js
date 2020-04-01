@@ -70,23 +70,28 @@ function keyTyped() {
 function keyPressed() {
 	if (keyCode === RIGHT_ARROW) {
 		background(51,19,179);
-		star(random(0,800),random(0,600),random(4,16));
-		star(random(0,800),random(0,600),random(4,16));
-		star(random(0,800),random(0,600),random(4,16));
-		star(random(0,800),random(0,600),random(4,16));
-		star(random(0,800),random(0,600),random(4,16));
-		star(random(0,800),random(0,600),random(4,16));
-		star(random(0,800),random(0,600),random(4,16));
-		star(random(0,800),random(0,600),random(4,16));
-		star(random(0,800),random(0,600),random(4,16));
-		star(random(0,800),random(0,600),random(4,16));
-		star(random(0,800),random(0,600),random(4,16));
-		star(random(0,800),random(0,600),random(4,16));
-		star(random(0,800),random(0,600),random(4,16));
-		star(random(0,800),random(0,600),random(4,16));
-		star(random(0,800),random(0,600),random(4,16));
-		star(random(0,800),random(0,600),random(4,16));
-		star(random(0,800),random(0,600),random(4,16));
+		for (x = 0; x < width; x+10) {
+			for (y = 0; y < height; y+15) {
+				star(x,y,random(2,20));
+			}
+		}
+		//star(random(0,800),random(0,600),random(4,16));
+		//star(random(0,800),random(0,600),random(4,16));
+		//star(random(0,800),random(0,600),random(4,16));
+		//star(random(0,800),random(0,600),random(4,16));
+		//star(random(0,800),random(0,600),random(4,16));
+		//star(random(0,800),random(0,600),random(4,16));
+		//star(random(0,800),random(0,600),random(4,16));
+		//star(random(0,800),random(0,600),random(4,16));
+		//star(random(0,800),random(0,600),random(4,16));
+		//star(random(0,800),random(0,600),random(4,16));
+		//star(random(0,800),random(0,600),random(4,16));
+		//star(random(0,800),random(0,600),random(4,16));
+		//star(random(0,800),random(0,600),random(4,16));
+		//star(random(0,800),random(0,600),random(4,16));
+		//star(random(0,800),random(0,600),random(4,16));
+		//star(random(0,800),random(0,600),random(4,16));
+		//star(random(0,800),random(0,600),random(4,16));
 	} else if (keyCode === LEFT_ARROW) {
 		background(135,235,255);
 		noStroke();
