@@ -91,8 +91,8 @@ function keyPressed() {
 		fill(255,215,82);
 		//triangle(0,0,100,0,0,100);
 		circle(0,0,150);
-		fill(255,255,255,40);
-		for (let y = 0; y < 10; y++) {
+		fill(255,255,255);
+		for (let y = 0; y < 8; y++) {
 			let randomX = random(width);
 			let randomY = random(height);
 			cloud(randomX, randomY, random(60,200));
