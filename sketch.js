@@ -70,8 +70,8 @@ function keyTyped() {
 function keyPressed() {
 	if (keyCode === RIGHT_ARROW) {
 		background(51,19,179);
-		for (x = 0; x < width; x+10) {
-			for (y = 0; y < height; y+15) {
+		for (x = 0; x < width; x+30) {
+			for (y = 0; y < height; y+35) {
 				star(x,y,random(2,20));
 			}
 		}
