@@ -89,7 +89,7 @@ function keyPressed() {
 		background(135,235,255);
 		noStroke();
 		fill(255,255,255);
-		for (let y = 0; y < 8; y++) {
+		for (let y = 0; y < 12; y++) {
 			let randomX = random(width);
 			let randomY = random(height);
 			cloud(randomX, randomY, random(20,100));
