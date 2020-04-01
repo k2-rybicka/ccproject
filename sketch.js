@@ -89,7 +89,7 @@ function keyPressed() {
 		background(135,235,255);
 		noStroke();
 		fill(255,255,255);
-		for (let y = 0; y < 12; y++) {
+		for (let y = 0; y < 30; y++) {
 			let randomX = random(width);
 			let randomY = random(height);
 			cloud(randomX, randomY, random(20,100));
@@ -100,13 +100,13 @@ function keyPressed() {
 }
 
 function one(x,y,z) {
-	fill(255,161,200);
+	fill(122,255,204);
 	noStroke();
 	quad(x,y,x+z,y,x+z,y+4*z,x,y+4*z);
 }
 
 function two(x,y,z) {
-	fill(255,146,44);
+	fill(108,188,204);
 	noStroke();
 	quad(x,y,x+4*z,y,x+4*z,y+z,x,y+z);
 	quad(x+z*3,y+z,x+z*4,y+z,x+z*4,y+z*4,x+z*3,y+z*4);
@@ -116,7 +116,7 @@ function two(x,y,z) {
 }
 
 function three(x,y,z) {
-	fill(247,205,255);
+	fill(135,105,255);
 	noStroke();
 	quad(x,y,x+3*z,y,x+3*z,y+z,x,y+z);
 	quad(x+3*z,y,x+4*z,y,x+4*z,y+7*z,x+3*z,y+7*z);
@@ -125,7 +125,7 @@ function three(x,y,z) {
 }
 
 function four(x,y,z) {
-	fill(192,255,191);
+	fill(106,124,128);
 	noStroke();
 	quad(x,y,x+z,y,x+z,y+4*z,x,y+4*z);
 	quad(x+z,y+3*z,x+z,y+4*z,x+4*z,y+4*z,x+4*z,y+3*z);
@@ -133,7 +133,7 @@ function four(x,y,z) {
 }
 
 function five(x,y,z) {
-	fill(235,92,52);
+	fill(255,241,110);
 	noStroke();
 	quad(x,y,x+z,y,x+z,y+4*z,x,y+4*z);
 	quad(x+z,y,x+4*z,y,x+4*z,y+z,x+z,y+z);
@@ -143,7 +143,7 @@ function five(x,y,z) {
 }
 
 function six(x,y,z) {
-	fill(255,160,156);
+	fill(255,161,200);
 	noStroke();
 	quad(x,y,x+z,y,x+z,y+5*z,x,y+5*z);
 	quad(x+z,y+2*z,x+4*z,y+2*z,x+4*z,y+3*z,x+z,y+3*z);
@@ -152,7 +152,7 @@ function six(x,y,z) {
 }
 
 function seven(x,y,z) {
-	fill(193,161,235);
+	fill(179,101,37);
 	noStroke();
 	quad(x,y,x+4*z,y,x+4*z,y+z,x,y+z);
 	quad(x+3*z,y+z,x+4*z,y+z,x+4*z,y+4*z,x+3*z,y+4*z);
@@ -160,7 +160,7 @@ function seven(x,y,z) {
 }
 
 function eight(x,y,z) {
-	fill(177,255,142);
+	fill(21,1,102);
 	noStroke();
 	quad(x,y,x+4*z,y,x+4*z,y+z,x,y+z);
 	quad(x,y+4*z,x+4*z,y+4*z,x+4*z,y+5*z,x,y+5*z);
@@ -170,7 +170,7 @@ function eight(x,y,z) {
 }
 
 function nine(x,y,z) {
-	fill(106,214,240);
+	fill(255,190,135);
 	noStroke();
 	quad(x,y,x+4*z,y,x+4*z,y+z,x,y+z);
 	quad(x+3*z,y+z,x+4*z,y+z,x+4*z,y+5*z,x+3*z,y+5*z);
@@ -179,7 +179,7 @@ function nine(x,y,z) {
 }
 
 function zero(x,y,z) {
-	fill(166,98,77);
+	fill(255,215,122);
 	noStroke();
 	quad(x,y,x+4*z,y,x+4*z,y+z,x,y+z);
 	quad(x,y+4*z,x+4*z,y+4*z,x+4*z,y+5*z,x,y+5*z);
