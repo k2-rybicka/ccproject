@@ -85,23 +85,6 @@ function keyPressed() {
       fill(255,255,255,rOpacity);
       ellipse(randomX, randomY, randomSize, randomSize);
   }
-		//star(random(0,800),random(0,600),random(4,16));
-		//star(random(0,800),random(0,600),random(4,16));
-		//star(random(0,800),random(0,600),random(4,16));
-		//star(random(0,800),random(0,600),random(4,16));
-		//star(random(0,800),random(0,600),random(4,16));
-		//star(random(0,800),random(0,600),random(4,16));
-		//star(random(0,800),random(0,600),random(4,16));
-		//star(random(0,800),random(0,600),random(4,16));
-		//star(random(0,800),random(0,600),random(4,16));
-		//star(random(0,800),random(0,600),random(4,16));
-		//star(random(0,800),random(0,600),random(4,16));
-		//star(random(0,800),random(0,600),random(4,16));
-		//star(random(0,800),random(0,600),random(4,16));
-		//star(random(0,800),random(0,600),random(4,16));
-		//star(random(0,800),random(0,600),random(4,16));
-		//star(random(0,800),random(0,600),random(4,16));
-		//star(random(0,800),random(0,600),random(4,16));
 	} else if (keyCode === LEFT_ARROW) {
 		background(135,235,255);
 		noStroke();
@@ -109,18 +92,11 @@ function keyPressed() {
 		//triangle(0,0,100,0,0,100);
 		circle(0,0,150);
 		fill(255,255,255,40);
-		cloud(random(0,800),random(0,600),random(40,200));
-		cloud(random(0,800),random(0,600),random(40,200));
-		cloud(random(0,800),random(0,600),random(40,200));
-		cloud(random(0,800),random(0,600),random(40,200));
-		cloud(random(0,800),random(0,600),random(40,200));
-		cloud(random(0,800),random(0,600),random(40,200));
-		cloud(random(0,800),random(0,600),random(40,200));
-		cloud(random(0,800),random(0,600),random(40,200));
-		cloud(random(0,800),random(0,600),random(40,200));
-		cloud(random(0,800),random(0,600),random(40,200));
-		cloud(random(0,800),random(0,600),random(40,200));
-		cloud(random(0,800),random(0,600),random(40,200));
+		for (let y = 0; y < itter; y++) {
+			let randomX = random(width);
+			let randomY = random(height);
+			cloud(randomX, randomY, random(60,200));
+		}
 	}
 }
 
@@ -212,12 +188,12 @@ function zero(x,y,z) {
 	quad(x+3*z,y+z,x+4*z,y+z,x+4*z,y+4*z,x+3*z,y+4*z);
 }
 
-function star(x,y,z) {
-	stroke(255,248,186);
-	strokeWeight(2);
-	line(x,y,x+2*z,y);
-	line(x+z,y-z,x+z,y+z);
-}
+//function star(x,y,z) {
+//	stroke(255,248,186);
+//	strokeWeight(2);
+//	line(x,y,x+2*z,y);
+//	line(x+z,y-z,x+z,y+z);
+//}
 
 function cloud(x,y,z) {
 	noStroke();
