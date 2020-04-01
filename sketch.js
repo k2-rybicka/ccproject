@@ -8,10 +8,12 @@ let reverb;
 let spring;
 let whistle;
 let whoosh;
+let day;
+let night;
 
 let itter = 240;
-let minSize = 1;
-let maxSize = 4;
+let minSize = 2;
+let maxSize = 6;
 let minOpacity = 50;
 let maxOpacity = 200;
 
@@ -26,6 +28,8 @@ function preload() {
 	spring = loadSound("spring.wav");
 	whistle = loadSound("whistle.wav");
 	whoosh = loadSound("whoosh.wav");
+	day = loadSound("day.wav");
+	night = loadSound("night.wav");
 }
 
 function setup() {
@@ -75,6 +79,8 @@ function keyTyped() {
 
 function keyPressed() {
 	if (keyCode === RIGHT_ARROW) {
+		day.stop();
+		night.play();
 		background(51,19,179);
 		for(let y = 0; y < itter; y++) {
       let randomSize = random(minSize, maxSize);
@@ -86,6 +92,13 @@ function keyPressed() {
       ellipse(randomX, randomY, randomSize, randomSize);
   }
 	} else if (keyCode === LEFT_ARROW) {
+		if (night.isPlaying()) {
+    night.stop();
+    day.play();
+  } else if (day.isPlaying()) {
+    day.stop();
+    day.play();
+  }
 		background(135,235,255);
 		noStroke();
 		fill(255,255,255);
