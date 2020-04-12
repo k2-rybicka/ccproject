@@ -9,13 +9,13 @@ let plum;
 let whistle;
 let bark;
 let day;
-let night;
+let night; //setting the variables for all the sounds
 
 let itter = 240;
 let minSize = 2;
 let maxSize = 6;
 let minOpacity = 50;
-let maxOpacity = 200;
+let maxOpacity = 200; //setting the variables needed for drawing shapes
 
 function preload() {
 	flute = loadSound("flute.wav");
@@ -29,18 +29,18 @@ function preload() {
 	whistle = loadSound("whistle.wav");
 	bark = loadSound("bark.wav");
 	day = loadSound("day.wav");
-	night = loadSound("night.wav");
+	night = loadSound("night.wav"); //preloading the sounds from file paths
 }
 
 function setup() {
   createCanvas(windowWidth,windowHeight/1.5);
-  background(139,153,179);
+  background(139,153,179); //canvas size and colour
 }
 
 function draw() {
-	fill(0);
- 	noStroke();
-	fill(random(200,255),random(100,255),random(120,255),random(20,80));
+	//fill(0);
+ 	//noStroke();
+	//fill(random(200,255),random(100,255),random(120,255),random(20,80));
 }
 
 function keyTyped() {
