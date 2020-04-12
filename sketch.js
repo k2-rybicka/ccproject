@@ -38,12 +38,9 @@ function setup() {
 }
 
 function draw() {
-	//fill(0);
- 	//noStroke();
-	//fill(random(200,255),random(100,255),random(120,255),random(20,80));
 }
 
-function keyTyped() {
+function keyTyped() { 
 	if (key === '1') {
 		one(random(0,width),random(0,height),random(5,30));
 		flute.play();
@@ -75,45 +72,48 @@ function keyTyped() {
 		zero(random(0,width),random(0,height),random(5,30))
 		bark.play();
 	}
-}
+} //functions triggering drawing particular shapes and playing sounds when number keys are pressed
 
 function keyPressed() {
-	if (keyCode === RIGHT_ARROW) {
+	if (keyCode === RIGHT_ARROW) { //setting the actions for "night"
 		if (day.isPlaying()) {
     day.stop();
-    night.play();
+    night.play(); //stopping the sound of "day" if it was playing before and playing the night sound
   } else {
   	night.play();
   }
-		background(51,19,179);
-		for(let y = 0; y < itter; y++) {
+		background(51,19,179); //setting a different background
+		for(let y = 0; y < itter; y++) { //setting the number of stars drawn
       let randomSize = random(minSize, maxSize);
       let randomX = random(width);
-      let randomY = random(height);
+      let randomY = random(height); //setting randomised variables
       noStroke();
-      let rOpacity = map(randomSize, minSize, maxSize, minOpacity, maxOpacity);
+      let rOpacity = map(randomSize, minSize, maxSize, minOpacity, maxOpacity); //setting random opacity
       fill(255,255,255,rOpacity);
-      ellipse(randomX, randomY, randomSize, randomSize);
+      ellipse(randomX, randomY, randomSize, randomSize); //drawing a star
   }
-	} else if (keyCode === LEFT_ARROW) {
+	} else if (keyCode === LEFT_ARROW) { //settingt the actions for "day"
 		if (night.isPlaying()) {
     night.stop();
-    day.play();
+    day.play(); //stopping the sound of "night" if it was playing before and playing the day sound
   } else {
     day.play();
   }
-		background(135,235,255);
+		background(135,235,255); //setting a different background
 		noStroke();
 		fill(255,255,255);
-		for (let y = 0; y < 30; y++) {
+		for (let y = 0; y < 30; y++) { //setting the number of clouds drawn
 			let randomX = random(width);
-			let randomY = random(height);
-			cloud(randomX, randomY, random(20,100));
+			let randomY = random(height); //setting the position variables
+			cloud(randomX, randomY, random(20,100)); //drawing a cloud with random size
 		}
 		fill(255,215,82);
-		circle(0,0,350);
+		circle(0,0,350); //drawing the sun
 	}
 }
+
+//all the functions below are shapes drawn for each number + one function for clouds
+//all the numbers have different colours
 
 function one(x,y,z) {
 	fill(122,255,204);
@@ -202,13 +202,6 @@ function zero(x,y,z) {
 	quad(x,y+z,x+z,y+z,x+z,y+4*z,x,y+4*z);
 	quad(x+3*z,y+z,x+4*z,y+z,x+4*z,y+4*z,x+3*z,y+4*z);
 }
-
-//function star(x,y,z) {
-//	stroke(255,248,186);
-//	strokeWeight(2);
-//	line(x,y,x+2*z,y);
-//	line(x+z,y-z,x+z,y+z);
-//}
 
 function cloud(x,y,z) {
 	noStroke();
